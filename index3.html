@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>パララックスサイト3</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 3000px;
+        }
+
+        #container {
+            width: 600px;
+            height: 280px;
+            background: #eee;
+        }
+
+        .box {
+            position: fixed;
+            opacity: 0.6;
+            left: 300px;
+        }
+
+        #box1 {
+            width: 40px;
+            height: 40px;
+            top: 140px;
+            background: red;
+        }
+
+        #box2 {
+            width: 50px;
+            height: 50px;
+            top: 155px;
+            background: blue;
+        }
+
+        #box3 {
+            width: 60px;
+            height: 60px;
+            top: 165px;
+            background: yellow;
+        }
+
+        
+        
+    </style>
+    </head>
+    <body>
+        <di id="container">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+        </div>
+       
+    </body>
+
+    <script>
+        $(function(){
+
+
+
+            $(window).scroll(function(){
+                var dy = $(this).scrollTop();
+                console.log(dy);
+                
+            });
+
+        });
+    </script>
+</html>
