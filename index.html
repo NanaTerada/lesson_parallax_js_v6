@@ -26,4 +26,17 @@
         <div id="box2" class="box"></div>
         <div id="box3" class="box"></div>
     </body>
+
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var dy = $(this).scrollTop(); //dy スクロール量
+                console.log(dy);
+                $('#box1').css('top',10 + dy /2)　//割ると速度を遅くできる分母が大きいほど遅い
+                $('#box2').css('top',60 + dy /5)
+                $('#box3').css('top',110 + dy /7)
+            });
+
+        });
+    </script>
 </html>
